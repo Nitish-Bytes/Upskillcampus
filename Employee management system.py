@@ -119,24 +119,22 @@ class Employee:
 
 
 # Menu-Driven Control Loop
-while True:
-    Employee.work()
+Employee.work()
 
-    userwork=int(input("Enter the which work are perform:- "))
-    if userwork ==1:
-        Employee.add_employee()
-    elif userwork ==2:
-        Employee.display_employee()
-    elif userwork ==3:
-        Employee.search_employee()
-    elif userwork ==4:
-        Employee.update_employee()
-    elif userwork ==5:
-        Employee.delete_employee()
-    elif userwork == 6:
-        Employee.calculate_salary()
-    else:
-        print("Invaild Input")
-    break
+userwork=int(input("Enter the which work are perform:- "))
+if userwork ==1:
+    Employee.add_employee()
+elif userwork ==2:
+    Employee.display_employee()
+elif userwork ==3:
+    Employee.search_employee()
+elif userwork ==4:
+    Employee.update_employee()
+elif userwork ==5:
+    Employee.delete_employee()
+elif userwork == 6:
+    Employee.calculate_salary()
+else:
+    print("Invaild Input")
 
 
